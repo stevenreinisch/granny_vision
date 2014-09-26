@@ -10,6 +10,7 @@
 #import "Objection.h"
 #import "P_WunderBarService.h"
 #import "MBProgressHUD.h"
+#import "TWMessageBarManager.h"
 @import Relayr;
 
 
@@ -35,18 +36,18 @@ objection_requires(@"wunderBarService")
     
     [self.wunderBarService connect:^(NSError *error) {
         [hud hide:YES];
-        
-        MBProgressHUD *completionHUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-        hud.mode = MBProgressHUDModeText;
-        
+
         if (!error) {
-            completionHUD.labelText = @"Es ist so wunderbar!";
+            [[TWMessageBarManager sharedInstance] showMessageWithTitle:@"Connected"
+                                                           description:nil
+                                                                  type:TWMessageBarMessageTypeSuccess
+                                                              duration:2.0];
         } else {
-            completionHUD.labelText = @"Someone has eaten the bar!";
+            [[TWMessageBarManager sharedInstance] showMessageWithTitle:@"Not Connected"
+                                                           description:nil
+                                                                  type:TWMessageBarMessageTypeError
+                                                              duration:2.0];
         }
-        
-        [completionHUD show:YES];
-        [completionHUD hide:YES afterDelay:2];
     }];
 }
 

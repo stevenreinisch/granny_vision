@@ -32,6 +32,13 @@
 		F9DA526B19D57F2F009FC2B6 /* WunderbarConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DA526A19D57F2F009FC2B6 /* WunderbarConfig.m */; };
 		F9DA526E19D58360009FC2B6 /* WunderbarServiceStub.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DA526D19D58360009FC2B6 /* WunderbarServiceStub.m */; };
 		F9DA527219D58528009FC2B6 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DA527119D58528009FC2B6 /* MBProgressHUD.m */; };
+		F9DA527D19D58C23009FC2B6 /* icon-error.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DA527519D58C23009FC2B6 /* icon-error.png */; };
+		F9DA527E19D58C23009FC2B6 /* icon-error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DA527619D58C23009FC2B6 /* icon-error@2x.png */; };
+		F9DA527F19D58C23009FC2B6 /* icon-info.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DA527719D58C23009FC2B6 /* icon-info.png */; };
+		F9DA528019D58C23009FC2B6 /* icon-info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DA527819D58C23009FC2B6 /* icon-info@2x.png */; };
+		F9DA528119D58C23009FC2B6 /* icon-success.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DA527919D58C23009FC2B6 /* icon-success.png */; };
+		F9DA528219D58C23009FC2B6 /* icon-success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DA527A19D58C23009FC2B6 /* icon-success@2x.png */; };
+		F9DA528319D58C23009FC2B6 /* TWMessageBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DA527C19D58C23009FC2B6 /* TWMessageBarManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +143,14 @@
 		F9DA526D19D58360009FC2B6 /* WunderbarServiceStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WunderbarServiceStub.m; sourceTree = "<group>"; };
 		F9DA527019D58528009FC2B6 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		F9DA527119D58528009FC2B6 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		F9DA527519D58C23009FC2B6 /* icon-error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-error.png"; sourceTree = "<group>"; };
+		F9DA527619D58C23009FC2B6 /* icon-error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-error@2x.png"; sourceTree = "<group>"; };
+		F9DA527719D58C23009FC2B6 /* icon-info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-info.png"; sourceTree = "<group>"; };
+		F9DA527819D58C23009FC2B6 /* icon-info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-info@2x.png"; sourceTree = "<group>"; };
+		F9DA527919D58C23009FC2B6 /* icon-success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-success.png"; sourceTree = "<group>"; };
+		F9DA527A19D58C23009FC2B6 /* icon-success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-success@2x.png"; sourceTree = "<group>"; };
+		F9DA527B19D58C23009FC2B6 /* TWMessageBarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWMessageBarManager.h; sourceTree = "<group>"; };
+		F9DA527C19D58C23009FC2B6 /* TWMessageBarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWMessageBarManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +264,7 @@
 		F9DA524019D5621B009FC2B6 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				F9DA527319D58C23009FC2B6 /* twmessagebar */,
 				F9DA526F19D58528009FC2B6 /* mbprogresshud */,
 				F9DA524119D5621B009FC2B6 /* objection */,
 			);
@@ -292,6 +308,29 @@
 				F9DA527119D58528009FC2B6 /* MBProgressHUD.m */,
 			);
 			path = mbprogresshud;
+			sourceTree = "<group>";
+		};
+		F9DA527319D58C23009FC2B6 /* twmessagebar */ = {
+			isa = PBXGroup;
+			children = (
+				F9DA527419D58C23009FC2B6 /* Icons */,
+				F9DA527B19D58C23009FC2B6 /* TWMessageBarManager.h */,
+				F9DA527C19D58C23009FC2B6 /* TWMessageBarManager.m */,
+			);
+			path = twmessagebar;
+			sourceTree = "<group>";
+		};
+		F9DA527419D58C23009FC2B6 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				F9DA527519D58C23009FC2B6 /* icon-error.png */,
+				F9DA527619D58C23009FC2B6 /* icon-error@2x.png */,
+				F9DA527719D58C23009FC2B6 /* icon-info.png */,
+				F9DA527819D58C23009FC2B6 /* icon-info@2x.png */,
+				F9DA527919D58C23009FC2B6 /* icon-success.png */,
+				F9DA527A19D58C23009FC2B6 /* icon-success@2x.png */,
+			);
+			path = Icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,8 +447,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9DA51AE19D54B61009FC2B6 /* Main.storyboard in Resources */,
+				F9DA527D19D58C23009FC2B6 /* icon-error.png in Resources */,
+				F9DA528119D58C23009FC2B6 /* icon-success.png in Resources */,
+				F9DA527F19D58C23009FC2B6 /* icon-info.png in Resources */,
+				F9DA528019D58C23009FC2B6 /* icon-info@2x.png in Resources */,
+				F9DA528219D58C23009FC2B6 /* icon-success@2x.png in Resources */,
 				F9DA51B319D54B61009FC2B6 /* LaunchScreen.xib in Resources */,
 				F9DA51B019D54B61009FC2B6 /* Images.xcassets in Resources */,
+				F9DA527E19D58C23009FC2B6 /* icon-error@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +488,7 @@
 				F9DA525919D5621B009FC2B6 /* JSObjectFactory.m in Sources */,
 				F9DA51A819D54B61009FC2B6 /* AppDelegate.m in Sources */,
 				F9DA525F19D5621B009FC2B6 /* JSObjectionModule.m in Sources */,
+				F9DA528319D58C23009FC2B6 /* TWMessageBarManager.m in Sources */,
 				F9DA525E19D5621B009FC2B6 /* JSObjectionInjectorEntry.m in Sources */,
 				F9DA51A519D54B61009FC2B6 /* main.m in Sources */,
 				F9DA525D19D5621B009FC2B6 /* JSObjectionInjector.m in Sources */,
