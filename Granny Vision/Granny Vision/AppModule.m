@@ -9,15 +9,19 @@
 #import "AppModule.h"
 
 #import "P_WunderBarService.h"
+#import "WunderBarService.h"
+#import "StartViewController.h"
 
 @implementation AppModule
 
 - (void)configure {
-    /*
-    [self bind:[UIApplication sharedApplication] toClass:[UIApplication class]];
-    [self bind:[UIApplication sharedApplication].delegate toProtocol:@protocol(UIApplicationDelegate)];
-    [self bindClass:[MyAPIService class] toProtocol:@protocol(APIService)];
-     */
+   
+    [self bindClass:[WunderBarService class]
+         toProtocol:@protocol(P_WunderBarService)
+            inScope:JSObjectionScopeSingleton];
+    
+    [self bindClass:[StartViewController class] inScope:JSObjectionScopeNormal];
+
 }
 
 @end

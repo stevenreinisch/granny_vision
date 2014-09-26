@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "AppModule.h"
+#import "P_WunderBarService.h"
+#import "StartViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +19,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    JSObjectionInjector *injector = [JSObjection createInjector:[[AppModule alloc] init]];
+    [JSObjection setDefaultInjector:injector];
+    
+//    id vc = [injector getObject:[StartViewController class]];
+//    NSLog(@"vc: %@", [vc performSelector:@selector(wunderBarService)]);
+//    
+//    id wbs =
+//    NSLog(@"wbs: %@", wbs);
+    
     return YES;
 }
 

@@ -88,10 +88,10 @@
     [_bindings setObject:entry forKey:key];
 }
 
-- (void)bindClass:(Class)aClass toProtocol:(Protocol *)aProtocol {
+- (void)bindClass:(Class)aClass toProtocol:(Protocol *)aProtocol inScope:(JSObjectionScope)scope {
 
     __JSClassProvider *provider = [[__JSClassProvider alloc] initWithClass:aClass];
-    [self bindProvider:provider toProtocol:aProtocol];
+    [self bindProvider:provider toProtocol:aProtocol inScope:scope];
 }
 
 - (void)bindClass:(Class)aClass toClass:(Class)toClass {
