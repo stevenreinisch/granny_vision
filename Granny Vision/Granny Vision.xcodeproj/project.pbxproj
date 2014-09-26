@@ -29,6 +29,7 @@
 		F9DA526219D5621B009FC2B6 /* JSObjectionUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DA525519D5621B009FC2B6 /* JSObjectionUtils.m */; };
 		F9DA526319D5621B009FC2B6 /* NSObject+Objection.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DA525719D5621B009FC2B6 /* NSObject+Objection.m */; };
 		F9DA526719D56368009FC2B6 /* WunderBarService.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DA526619D56368009FC2B6 /* WunderBarService.m */; };
+		F9DA526B19D57F2F009FC2B6 /* WunderbarConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DA526A19D57F2F009FC2B6 /* WunderbarConfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +127,9 @@
 		F9DA526419D562FB009FC2B6 /* P_WunderBarService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = P_WunderBarService.h; sourceTree = "<group>"; };
 		F9DA526519D56368009FC2B6 /* WunderBarService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WunderBarService.h; sourceTree = "<group>"; };
 		F9DA526619D56368009FC2B6 /* WunderBarService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WunderBarService.m; sourceTree = "<group>"; };
+		F9DA526819D57D9E009FC2B6 /* P_WunderbarConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = P_WunderbarConfig.h; sourceTree = "<group>"; };
+		F9DA526919D57F2F009FC2B6 /* WunderbarConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WunderbarConfig.h; sourceTree = "<group>"; };
+		F9DA526A19D57F2F009FC2B6 /* WunderbarConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WunderbarConfig.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +187,9 @@
 				F9DA526419D562FB009FC2B6 /* P_WunderBarService.h */,
 				F9DA526519D56368009FC2B6 /* WunderBarService.h */,
 				F9DA526619D56368009FC2B6 /* WunderBarService.m */,
+				F9DA526819D57D9E009FC2B6 /* P_WunderbarConfig.h */,
+				F9DA526919D57F2F009FC2B6 /* WunderbarConfig.h */,
+				F9DA526A19D57F2F009FC2B6 /* WunderbarConfig.m */,
 			);
 			path = "Granny Vision";
 			sourceTree = "<group>";
@@ -412,6 +419,7 @@
 				F9DA526219D5621B009FC2B6 /* JSObjectionUtils.m in Sources */,
 				F9DA526719D56368009FC2B6 /* WunderBarService.m in Sources */,
 				F9DA525B19D5621B009FC2B6 /* JSObjectionBindingEntry.m in Sources */,
+				F9DA526B19D57F2F009FC2B6 /* WunderbarConfig.m in Sources */,
 				F9DA525919D5621B009FC2B6 /* JSObjectFactory.m in Sources */,
 				F9DA51A819D54B61009FC2B6 /* AppDelegate.m in Sources */,
 				F9DA525F19D5621B009FC2B6 /* JSObjectionModule.m in Sources */,

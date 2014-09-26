@@ -10,6 +10,8 @@
 
 #import "P_WunderBarService.h"
 #import "WunderBarService.h"
+#import "P_WunderbarConfig.h"
+#import "WunderbarConfig.h"
 #import "StartViewController.h"
 
 @implementation AppModule
@@ -18,6 +20,10 @@
    
     [self bindClass:[WunderBarService class]
          toProtocol:@protocol(P_WunderBarService)
+            inScope:JSObjectionScopeSingleton];
+    
+    [self bindClass:[WunderbarConfig class]
+         toProtocol:@protocol(P_WunderbarConfig)
             inScope:JSObjectionScopeSingleton];
     
     [self bindClass:[StartViewController class] inScope:JSObjectionScopeNormal];

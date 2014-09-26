@@ -10,10 +10,6 @@ extern NSString *const kDoorBellIsRinning;
 
 @protocol P_WunderBarService <NSObject>
 
-- (NSString*) appID;
-
-- (NSString*) clientID;
-
-- (NSString*) secretID;
+- (void)connect:(void (^)(NSError* error))completion;
 
 @end

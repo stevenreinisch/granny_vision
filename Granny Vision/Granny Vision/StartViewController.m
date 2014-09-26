@@ -28,12 +28,8 @@ objection_requires(@"wunderBarService")
     
     self.wunderBarService = [[JSObjection defaultInjector] getObject:@protocol(P_WunderBarService)];
     
-    NSLog(@"App ID: %@", self.wunderBarService.appID);
-    
-    [RelayrCloud isReachable:^(NSError* error, NSNumber* isReachable){
-        if (isReachable.boolValue) {
-            NSLog(@"The Relayr Cloud is reachable! App ID: %@", wunderBarService.appID);
-        }
+    [self.wunderBarService connect:^(NSError *error) {
+        
     }];
 }
 
