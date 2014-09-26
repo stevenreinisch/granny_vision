@@ -14,6 +14,8 @@
 #import "P_WunderbarConfig.h"
 #import "WunderbarConfig.h"
 #import "StartViewController.h"
+#import "P_MircoPhoneObserver.h"
+#import "MicrophoneObserver.h"
 
 @implementation AppModule
 
@@ -26,6 +28,10 @@
     
     [self bindClass:[WunderbarConfig class]
          toProtocol:@protocol(P_WunderbarConfig)
+            inScope:JSObjectionScopeSingleton];
+    
+    [self bindClass:[MicrophoneObserver class]
+         toProtocol:@protocol(P_MircoPhoneObserver)
             inScope:JSObjectionScopeSingleton];
     
     [self bindClass:[StartViewController class] inScope:JSObjectionScopeNormal];

@@ -39,6 +39,10 @@
 		F9DA528119D58C23009FC2B6 /* icon-success.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DA527919D58C23009FC2B6 /* icon-success.png */; };
 		F9DA528219D58C23009FC2B6 /* icon-success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DA527A19D58C23009FC2B6 /* icon-success@2x.png */; };
 		F9DA528319D58C23009FC2B6 /* TWMessageBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DA527C19D58C23009FC2B6 /* TWMessageBarManager.m */; };
+		F9DA528919D595A0009FC2B6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9DA528819D595A0009FC2B6 /* AVFoundation.framework */; };
+		F9DA528B19D595A7009FC2B6 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9DA528A19D595A7009FC2B6 /* CoreAudio.framework */; };
+		F9DA528F19D5969F009FC2B6 /* MicrophoneObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DA528E19D5969F009FC2B6 /* MicrophoneObserver.m */; };
+		F9DA529419D59743009FC2B6 /* ARAudioRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DA529219D59743009FC2B6 /* ARAudioRecognizer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +155,14 @@
 		F9DA527A19D58C23009FC2B6 /* icon-success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-success@2x.png"; sourceTree = "<group>"; };
 		F9DA527B19D58C23009FC2B6 /* TWMessageBarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWMessageBarManager.h; sourceTree = "<group>"; };
 		F9DA527C19D58C23009FC2B6 /* TWMessageBarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWMessageBarManager.m; sourceTree = "<group>"; };
+		F9DA528819D595A0009FC2B6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F9DA528A19D595A7009FC2B6 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		F9DA528C19D59666009FC2B6 /* P_MircoPhoneObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = P_MircoPhoneObserver.h; sourceTree = "<group>"; };
+		F9DA528D19D5969F009FC2B6 /* MicrophoneObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MicrophoneObserver.h; sourceTree = "<group>"; };
+		F9DA528E19D5969F009FC2B6 /* MicrophoneObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MicrophoneObserver.m; sourceTree = "<group>"; };
+		F9DA529119D59743009FC2B6 /* ARAudioRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARAudioRecognizer.h; sourceTree = "<group>"; };
+		F9DA529219D59743009FC2B6 /* ARAudioRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARAudioRecognizer.m; sourceTree = "<group>"; };
+		F9DA529319D59743009FC2B6 /* ARAudioRecognizerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARAudioRecognizerDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +170,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9DA528B19D595A7009FC2B6 /* CoreAudio.framework in Frameworks */,
+				F9DA528919D595A0009FC2B6 /* AVFoundation.framework in Frameworks */,
 				F9DA521F19D550DF009FC2B6 /* Relayr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +227,9 @@
 				F9DA526A19D57F2F009FC2B6 /* WunderbarConfig.m */,
 				F9DA526C19D58360009FC2B6 /* WunderbarServiceStub.h */,
 				F9DA526D19D58360009FC2B6 /* WunderbarServiceStub.m */,
+				F9DA528C19D59666009FC2B6 /* P_MircoPhoneObserver.h */,
+				F9DA528D19D5969F009FC2B6 /* MicrophoneObserver.h */,
+				F9DA528E19D5969F009FC2B6 /* MicrophoneObserver.m */,
 			);
 			path = "Granny Vision";
 			sourceTree = "<group>";
@@ -246,6 +263,8 @@
 		F9DA51D419D54C3C009FC2B6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F9DA528A19D595A7009FC2B6 /* CoreAudio.framework */,
+				F9DA528819D595A0009FC2B6 /* AVFoundation.framework */,
 				F9DA521219D550BA009FC2B6 /* RelayrSDK.xcodeproj */,
 			);
 			name = Frameworks;
@@ -264,6 +283,7 @@
 		F9DA524019D5621B009FC2B6 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				F9DA529019D59743009FC2B6 /* audiorecognizer */,
 				F9DA527319D58C23009FC2B6 /* twmessagebar */,
 				F9DA526F19D58528009FC2B6 /* mbprogresshud */,
 				F9DA524119D5621B009FC2B6 /* objection */,
@@ -331,6 +351,16 @@
 				F9DA527A19D58C23009FC2B6 /* icon-success@2x.png */,
 			);
 			path = Icons;
+			sourceTree = "<group>";
+		};
+		F9DA529019D59743009FC2B6 /* audiorecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				F9DA529119D59743009FC2B6 /* ARAudioRecognizer.h */,
+				F9DA529219D59743009FC2B6 /* ARAudioRecognizer.m */,
+				F9DA529319D59743009FC2B6 /* ARAudioRecognizerDelegate.h */,
+			);
+			path = audiorecognizer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -481,6 +511,8 @@
 				F9DA525A19D5621B009FC2B6 /* JSObjection.m in Sources */,
 				F9DA527219D58528009FC2B6 /* MBProgressHUD.m in Sources */,
 				F9DA526219D5621B009FC2B6 /* JSObjectionUtils.m in Sources */,
+				F9DA529419D59743009FC2B6 /* ARAudioRecognizer.m in Sources */,
+				F9DA528F19D5969F009FC2B6 /* MicrophoneObserver.m in Sources */,
 				F9DA526E19D58360009FC2B6 /* WunderbarServiceStub.m in Sources */,
 				F9DA526719D56368009FC2B6 /* WunderBarService.m in Sources */,
 				F9DA525B19D5621B009FC2B6 /* JSObjectionBindingEntry.m in Sources */,

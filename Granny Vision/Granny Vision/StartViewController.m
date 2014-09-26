@@ -9,6 +9,7 @@
 #import "StartViewController.h"
 #import "Objection.h"
 #import "P_WunderBarService.h"
+#import "P_MircoPhoneObserver.h"
 #import "MBProgressHUD.h"
 #import "TWMessageBarManager.h"
 @import Relayr;
@@ -17,6 +18,7 @@
 @interface StartViewController ()
 
 @property (strong) id<P_WunderBarService> wunderBarService;
+@property (strong) id<P_MircoPhoneObserver> micObserver;
 
 @end
 
@@ -29,7 +31,8 @@ objection_requires(@"wunderBarService")
     [super viewDidLoad];
     
     self.wunderBarService = [[JSObjection defaultInjector] getObject:@protocol(P_WunderBarService)];
-    
+    self.micObserver = [[JSObjection defaultInjector] getObject:@protocol(P_MircoPhoneObserver)];
+    [self.micObserver startObserving];
     [self _subscribeToNotifications];
     
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
@@ -82,6 +85,18 @@ objection_requires(@"wunderBarService")
      usingBlock:^(NSNotification *note) {
          
          [[TWMessageBarManager sharedInstance] showMessageWithTitle:@"Santa is coming to town!"
+                                                        description:nil
+                                                               type:TWMessageBarMessageTypeInfo
+                                                           duration:2.0];
+     }];
+    
+    [[NSNotificationCenter defaultCenter]
+     addObserverForName:kUserBlowDetected
+     object:nil
+     queue:[NSOperationQueue mainQueue]
+     usingBlock:^(NSNotification *note) {
+         
+         [[TWMessageBarManager sharedInstance] showMessageWithTitle:@"Blow it!"
                                                         description:nil
                                                                type:TWMessageBarMessageTypeInfo
                                                            duration:2.0];
