@@ -9,6 +9,7 @@
 #import "StartViewController.h"
 #import "Objection.h"
 #import "P_WunderBarService.h"
+#import "MBProgressHUD.h"
 @import Relayr;
 
 
@@ -28,8 +29,24 @@ objection_requires(@"wunderBarService")
     
     self.wunderBarService = [[JSObjection defaultInjector] getObject:@protocol(P_WunderBarService)];
     
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.mode = MBProgressHUDModeIndeterminate;
+    hud.labelText = @"Connecting to WunderBar";
+    
     [self.wunderBarService connect:^(NSError *error) {
+        [hud hide:YES];
         
+        MBProgressHUD *completionHUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        hud.mode = MBProgressHUDModeText;
+        
+        if (!error) {
+            completionHUD.labelText = @"Es ist so wunderbar!";
+        } else {
+            completionHUD.labelText = @"Someone has eaten the bar!";
+        }
+        
+        [completionHUD show:YES];
+        [completionHUD hide:YES afterDelay:2];
     }];
 }
 

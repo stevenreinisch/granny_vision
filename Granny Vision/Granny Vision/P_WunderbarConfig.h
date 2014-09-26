@@ -14,4 +14,6 @@
 
 - (NSString*) secretID;
 
+- (NSString*) redirectURI;
+
 @end

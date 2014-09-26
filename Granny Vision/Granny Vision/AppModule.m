@@ -10,6 +10,7 @@
 
 #import "P_WunderBarService.h"
 #import "WunderBarService.h"
+#import "WunderbarServiceStub.h"
 #import "P_WunderbarConfig.h"
 #import "WunderbarConfig.h"
 #import "StartViewController.h"
@@ -18,7 +19,8 @@
 
 - (void)configure {
    
-    [self bindClass:[WunderBarService class]
+    [self //bindClass:[WunderBarService class]
+          bindClass:[WunderbarServiceStub class]
          toProtocol:@protocol(P_WunderBarService)
             inScope:JSObjectionScopeSingleton];
     

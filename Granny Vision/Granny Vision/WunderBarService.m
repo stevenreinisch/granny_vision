@@ -13,6 +13,8 @@
 
 NSString *const kDoorBellIsRinning = @"kDoorBellIsRinning";
 
+
+
 @interface WunderBarService ()
 @property (strong) id<P_WunderbarConfig> config;
 @property (strong) RelayrApp *app;
@@ -25,7 +27,36 @@ objection_requires(@"config")
 
 - (void)connect:(void (^)(NSError* error))completion {
     NSLog(@"%@", [config appID]);
-    completion(nil);
+    
+    [RelayrCloud isReachable:^(NSError* error, NSNumber* isReachable){
+        if (isReachable.boolValue) {
+            NSLog(@"The Relayr Cloud is reachable!");
+            
+            [RelayrApp appWithID:[config appID]
+               OAuthClientSecret:[config secretID]
+                     redirectURI:[config redirectURI]
+                      completion:^(NSError* error, RelayrApp* app){
+                          
+                          if (!error) {
+                              if (app) {
+                                  NSLog(@"Application with name: %@ and description: %@", app.name, app.description);
+                                  self.app = app;
+                              }
+                          } else {
+                              NSLog(@"Cannot connect to app %@", [config appID]);
+                          }
+                          completion(error);
+            }];
+            
+        } else {
+            NSError *error = [NSError errorWithDomain:NSStringFromClass([self class])
+                                                 code:kCloudNotReachable
+                                             userInfo:nil];
+            completion(error);
+        }
+    }];
+    
+    
 }
 
 @end

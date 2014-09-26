@@ -8,6 +8,10 @@
 
 extern NSString *const kDoorBellIsRinning;
 
+typedef enum {
+    kCloudNotReachable
+} WunderBarError;
+
 @protocol P_WunderBarService <NSObject>
 
 - (void)connect:(void (^)(NSError* error))completion;
