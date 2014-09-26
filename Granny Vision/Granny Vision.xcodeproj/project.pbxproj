@@ -16,6 +16,19 @@
 		F9DA51BF19D54B61009FC2B6 /* Granny_VisionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DA51BE19D54B61009FC2B6 /* Granny_VisionTests.m */; };
 		F9DA521F19D550DF009FC2B6 /* Relayr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9DA521A19D550BB009FC2B6 /* Relayr.framework */; };
 		F9DA522019D550DF009FC2B6 /* Relayr.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F9DA521A19D550BB009FC2B6 /* Relayr.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F9DA523F19D5613D009FC2B6 /* AppModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DA523E19D5613D009FC2B6 /* AppModule.m */; };
+		F9DA525919D5621B009FC2B6 /* JSObjectFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DA524319D5621B009FC2B6 /* JSObjectFactory.m */; };
+		F9DA525A19D5621B009FC2B6 /* JSObjection.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DA524519D5621B009FC2B6 /* JSObjection.m */; };
+		F9DA525B19D5621B009FC2B6 /* JSObjectionBindingEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DA524719D5621B009FC2B6 /* JSObjectionBindingEntry.m */; };
+		F9DA525C19D5621B009FC2B6 /* JSObjectionEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DA524919D5621B009FC2B6 /* JSObjectionEntry.m */; };
+		F9DA525D19D5621B009FC2B6 /* JSObjectionInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DA524B19D5621B009FC2B6 /* JSObjectionInjector.m */; };
+		F9DA525E19D5621B009FC2B6 /* JSObjectionInjectorEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DA524D19D5621B009FC2B6 /* JSObjectionInjectorEntry.m */; };
+		F9DA525F19D5621B009FC2B6 /* JSObjectionModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DA524F19D5621B009FC2B6 /* JSObjectionModule.m */; };
+		F9DA526019D5621B009FC2B6 /* JSObjectionProviderEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DA525119D5621B009FC2B6 /* JSObjectionProviderEntry.m */; };
+		F9DA526119D5621B009FC2B6 /* JSObjectionRuntimePropertyReflector.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DA525319D5621B009FC2B6 /* JSObjectionRuntimePropertyReflector.m */; };
+		F9DA526219D5621B009FC2B6 /* JSObjectionUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DA525519D5621B009FC2B6 /* JSObjectionUtils.m */; };
+		F9DA526319D5621B009FC2B6 /* NSObject+Objection.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DA525719D5621B009FC2B6 /* NSObject+Objection.m */; };
+		F9DA526719D56368009FC2B6 /* WunderBarService.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DA526619D56368009FC2B6 /* WunderBarService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +98,34 @@
 		F9DA51BD19D54B61009FC2B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9DA51BE19D54B61009FC2B6 /* Granny_VisionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Granny_VisionTests.m; sourceTree = "<group>"; };
 		F9DA521219D550BA009FC2B6 /* RelayrSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RelayrSDK.xcodeproj; path = "../../apple-sdk/RelayrSDK/RelayrSDK.xcodeproj"; sourceTree = "<group>"; };
+		F9DA523D19D5613D009FC2B6 /* AppModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppModule.h; sourceTree = "<group>"; };
+		F9DA523E19D5613D009FC2B6 /* AppModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppModule.m; sourceTree = "<group>"; };
+		F9DA524219D5621B009FC2B6 /* JSObjectFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSObjectFactory.h; sourceTree = "<group>"; };
+		F9DA524319D5621B009FC2B6 /* JSObjectFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSObjectFactory.m; sourceTree = "<group>"; };
+		F9DA524419D5621B009FC2B6 /* JSObjection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSObjection.h; sourceTree = "<group>"; };
+		F9DA524519D5621B009FC2B6 /* JSObjection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSObjection.m; sourceTree = "<group>"; };
+		F9DA524619D5621B009FC2B6 /* JSObjectionBindingEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSObjectionBindingEntry.h; sourceTree = "<group>"; };
+		F9DA524719D5621B009FC2B6 /* JSObjectionBindingEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSObjectionBindingEntry.m; sourceTree = "<group>"; };
+		F9DA524819D5621B009FC2B6 /* JSObjectionEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSObjectionEntry.h; sourceTree = "<group>"; };
+		F9DA524919D5621B009FC2B6 /* JSObjectionEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSObjectionEntry.m; sourceTree = "<group>"; };
+		F9DA524A19D5621B009FC2B6 /* JSObjectionInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSObjectionInjector.h; sourceTree = "<group>"; };
+		F9DA524B19D5621B009FC2B6 /* JSObjectionInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSObjectionInjector.m; sourceTree = "<group>"; };
+		F9DA524C19D5621B009FC2B6 /* JSObjectionInjectorEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSObjectionInjectorEntry.h; sourceTree = "<group>"; };
+		F9DA524D19D5621B009FC2B6 /* JSObjectionInjectorEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSObjectionInjectorEntry.m; sourceTree = "<group>"; };
+		F9DA524E19D5621B009FC2B6 /* JSObjectionModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSObjectionModule.h; sourceTree = "<group>"; };
+		F9DA524F19D5621B009FC2B6 /* JSObjectionModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSObjectionModule.m; sourceTree = "<group>"; };
+		F9DA525019D5621B009FC2B6 /* JSObjectionProviderEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSObjectionProviderEntry.h; sourceTree = "<group>"; };
+		F9DA525119D5621B009FC2B6 /* JSObjectionProviderEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSObjectionProviderEntry.m; sourceTree = "<group>"; };
+		F9DA525219D5621B009FC2B6 /* JSObjectionRuntimePropertyReflector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSObjectionRuntimePropertyReflector.h; sourceTree = "<group>"; };
+		F9DA525319D5621B009FC2B6 /* JSObjectionRuntimePropertyReflector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSObjectionRuntimePropertyReflector.m; sourceTree = "<group>"; };
+		F9DA525419D5621B009FC2B6 /* JSObjectionUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSObjectionUtils.h; sourceTree = "<group>"; };
+		F9DA525519D5621B009FC2B6 /* JSObjectionUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSObjectionUtils.m; sourceTree = "<group>"; };
+		F9DA525619D5621B009FC2B6 /* NSObject+Objection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Objection.h"; sourceTree = "<group>"; };
+		F9DA525719D5621B009FC2B6 /* NSObject+Objection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Objection.m"; sourceTree = "<group>"; };
+		F9DA525819D5621B009FC2B6 /* Objection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Objection.h; sourceTree = "<group>"; };
+		F9DA526419D562FB009FC2B6 /* P_WunderBarService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = P_WunderBarService.h; sourceTree = "<group>"; };
+		F9DA526519D56368009FC2B6 /* WunderBarService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WunderBarService.h; sourceTree = "<group>"; };
+		F9DA526619D56368009FC2B6 /* WunderBarService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WunderBarService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +169,7 @@
 		F9DA51A119D54B61009FC2B6 /* Granny Vision */ = {
 			isa = PBXGroup;
 			children = (
+				F9DA524019D5621B009FC2B6 /* lib */,
 				F9DA51A619D54B61009FC2B6 /* AppDelegate.h */,
 				F9DA51A719D54B61009FC2B6 /* AppDelegate.m */,
 				F9DA51A919D54B61009FC2B6 /* ViewController.h */,
@@ -136,6 +178,11 @@
 				F9DA51AF19D54B61009FC2B6 /* Images.xcassets */,
 				F9DA51B119D54B61009FC2B6 /* LaunchScreen.xib */,
 				F9DA51A219D54B61009FC2B6 /* Supporting Files */,
+				F9DA523D19D5613D009FC2B6 /* AppModule.h */,
+				F9DA523E19D5613D009FC2B6 /* AppModule.m */,
+				F9DA526419D562FB009FC2B6 /* P_WunderBarService.h */,
+				F9DA526519D56368009FC2B6 /* WunderBarService.h */,
+				F9DA526619D56368009FC2B6 /* WunderBarService.m */,
 			);
 			path = "Granny Vision";
 			sourceTree = "<group>";
@@ -182,6 +229,44 @@
 				F9DA521E19D550BB009FC2B6 /* Tests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F9DA524019D5621B009FC2B6 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				F9DA524119D5621B009FC2B6 /* objection */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		F9DA524119D5621B009FC2B6 /* objection */ = {
+			isa = PBXGroup;
+			children = (
+				F9DA524219D5621B009FC2B6 /* JSObjectFactory.h */,
+				F9DA524319D5621B009FC2B6 /* JSObjectFactory.m */,
+				F9DA524419D5621B009FC2B6 /* JSObjection.h */,
+				F9DA524519D5621B009FC2B6 /* JSObjection.m */,
+				F9DA524619D5621B009FC2B6 /* JSObjectionBindingEntry.h */,
+				F9DA524719D5621B009FC2B6 /* JSObjectionBindingEntry.m */,
+				F9DA524819D5621B009FC2B6 /* JSObjectionEntry.h */,
+				F9DA524919D5621B009FC2B6 /* JSObjectionEntry.m */,
+				F9DA524A19D5621B009FC2B6 /* JSObjectionInjector.h */,
+				F9DA524B19D5621B009FC2B6 /* JSObjectionInjector.m */,
+				F9DA524C19D5621B009FC2B6 /* JSObjectionInjectorEntry.h */,
+				F9DA524D19D5621B009FC2B6 /* JSObjectionInjectorEntry.m */,
+				F9DA524E19D5621B009FC2B6 /* JSObjectionModule.h */,
+				F9DA524F19D5621B009FC2B6 /* JSObjectionModule.m */,
+				F9DA525019D5621B009FC2B6 /* JSObjectionProviderEntry.h */,
+				F9DA525119D5621B009FC2B6 /* JSObjectionProviderEntry.m */,
+				F9DA525219D5621B009FC2B6 /* JSObjectionRuntimePropertyReflector.h */,
+				F9DA525319D5621B009FC2B6 /* JSObjectionRuntimePropertyReflector.m */,
+				F9DA525419D5621B009FC2B6 /* JSObjectionUtils.h */,
+				F9DA525519D5621B009FC2B6 /* JSObjectionUtils.m */,
+				F9DA525619D5621B009FC2B6 /* NSObject+Objection.h */,
+				F9DA525719D5621B009FC2B6 /* NSObject+Objection.m */,
+				F9DA525819D5621B009FC2B6 /* Objection.h */,
+			);
+			path = objection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +320,7 @@
 				TargetAttributes = {
 					F9DA519E19D54B61009FC2B6 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 56ETNADXPZ;
 					};
 					F9DA51B719D54B61009FC2B6 = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -316,9 +402,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9DA526019D5621B009FC2B6 /* JSObjectionProviderEntry.m in Sources */,
 				F9DA51AB19D54B61009FC2B6 /* ViewController.m in Sources */,
+				F9DA525C19D5621B009FC2B6 /* JSObjectionEntry.m in Sources */,
+				F9DA526319D5621B009FC2B6 /* NSObject+Objection.m in Sources */,
+				F9DA526119D5621B009FC2B6 /* JSObjectionRuntimePropertyReflector.m in Sources */,
+				F9DA523F19D5613D009FC2B6 /* AppModule.m in Sources */,
+				F9DA525A19D5621B009FC2B6 /* JSObjection.m in Sources */,
+				F9DA526219D5621B009FC2B6 /* JSObjectionUtils.m in Sources */,
+				F9DA526719D56368009FC2B6 /* WunderBarService.m in Sources */,
+				F9DA525B19D5621B009FC2B6 /* JSObjectionBindingEntry.m in Sources */,
+				F9DA525919D5621B009FC2B6 /* JSObjectFactory.m in Sources */,
 				F9DA51A819D54B61009FC2B6 /* AppDelegate.m in Sources */,
+				F9DA525F19D5621B009FC2B6 /* JSObjectionModule.m in Sources */,
+				F9DA525E19D5621B009FC2B6 /* JSObjectionInjectorEntry.m in Sources */,
 				F9DA51A519D54B61009FC2B6 /* main.m in Sources */,
+				F9DA525D19D5621B009FC2B6 /* JSObjectionInjector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +481,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: orderbird AG";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -423,7 +522,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: orderbird AG";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -445,6 +544,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Granny Vision/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -455,6 +555,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Granny Vision/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

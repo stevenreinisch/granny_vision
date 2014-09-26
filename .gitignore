@@ -14,4 +14,7 @@ xcuserdata
 profile
 *.moved-aside
 DerivedData
-.idea/
+.idea
+
+*WunderBarService.m
+/
