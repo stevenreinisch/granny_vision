@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F974038F19D5B502002101F3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F974038D19D5B502002101F3 /* AVFoundation.framework */; };
+		F974039019D5B502002101F3 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F974038E19D5B502002101F3 /* CoreAudio.framework */; };
+		F999A7FA19D5AF0400F91926 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F999A7F919D5AF0400F91926 /* main.m */; };
+		F999A80019D5AF0400F91926 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F999A7FF19D5AF0400F91926 /* ViewController.m */; };
+		F999A80319D5AF0400F91926 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F999A80119D5AF0400F91926 /* Main.storyboard */; };
+		F999A80519D5AF0400F91926 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F999A80419D5AF0400F91926 /* Images.xcassets */; };
+		F999A80819D5AF0400F91926 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F999A80619D5AF0400F91926 /* LaunchScreen.xib */; };
+		F999A81419D5AF0500F91926 /* GrannyVisionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F999A81319D5AF0500F91926 /* GrannyVisionTests.m */; };
+		F999A82719D5B00700F91926 /* PubNub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F999A82319D5AFF700F91926 /* PubNub.framework */; };
+		F999A82819D5B00700F91926 /* PubNub.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F999A82319D5AFF700F91926 /* PubNub.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F999A82919D5B00700F91926 /* Relayr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F999A82419D5AFF700F91926 /* Relayr.framework */; };
+		F999A82A19D5B00700F91926 /* Relayr.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F999A82419D5AFF700F91926 /* Relayr.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F999A83919D5B07300F91926 /* MicrophoneObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = F999A82D19D5B07300F91926 /* MicrophoneObserver.m */; };
+		F999A83A19D5B07300F91926 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F999A83219D5B07300F91926 /* StartViewController.m */; };
+		F999A83B19D5B07300F91926 /* WunderbarConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F999A83419D5B07300F91926 /* WunderbarConfig.m */; };
+		F999A83C19D5B07300F91926 /* WunderBarService.m in Sources */ = {isa = PBXBuildFile; fileRef = F999A83619D5B07300F91926 /* WunderBarService.m */; };
+		F999A83D19D5B07300F91926 /* WunderbarServiceStub.m in Sources */ = {isa = PBXBuildFile; fileRef = F999A83819D5B07300F91926 /* WunderbarServiceStub.m */; };
+		F999A84019D5B08100F91926 /* AppModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F999A83F19D5B08100F91926 /* AppModule.m */; };
+		F999A84319D5B09600F91926 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F999A84219D5B09600F91926 /* AppDelegate.m */; };
+		F999A86E19D5B0A300F91926 /* ARAudioRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = F999A84719D5B0A300F91926 /* ARAudioRecognizer.m */; };
+		F999A86F19D5B0A300F91926 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F999A84B19D5B0A300F91926 /* MBProgressHUD.m */; };
+		F999A87019D5B0A300F91926 /* JSObjectFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F999A84E19D5B0A300F91926 /* JSObjectFactory.m */; };
+		F999A87119D5B0A300F91926 /* JSObjection.m in Sources */ = {isa = PBXBuildFile; fileRef = F999A85019D5B0A300F91926 /* JSObjection.m */; };
+		F999A87219D5B0A300F91926 /* JSObjectionBindingEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = F999A85219D5B0A300F91926 /* JSObjectionBindingEntry.m */; };
+		F999A87319D5B0A300F91926 /* JSObjectionEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = F999A85419D5B0A300F91926 /* JSObjectionEntry.m */; };
+		F999A87419D5B0A300F91926 /* JSObjectionInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = F999A85619D5B0A300F91926 /* JSObjectionInjector.m */; };
+		F999A87519D5B0A300F91926 /* JSObjectionInjectorEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = F999A85819D5B0A300F91926 /* JSObjectionInjectorEntry.m */; };
+		F999A87619D5B0A300F91926 /* JSObjectionModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F999A85A19D5B0A300F91926 /* JSObjectionModule.m */; };
+		F999A87719D5B0A300F91926 /* JSObjectionProviderEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = F999A85C19D5B0A300F91926 /* JSObjectionProviderEntry.m */; };
+		F999A87819D5B0A300F91926 /* JSObjectionRuntimePropertyReflector.m in Sources */ = {isa = PBXBuildFile; fileRef = F999A85E19D5B0A300F91926 /* JSObjectionRuntimePropertyReflector.m */; };
+		F999A87919D5B0A300F91926 /* JSObjectionUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F999A86019D5B0A300F91926 /* JSObjectionUtils.m */; };
+		F999A87A19D5B0A300F91926 /* NSObject+Objection.m in Sources */ = {isa = PBXBuildFile; fileRef = F999A86219D5B0A300F91926 /* NSObject+Objection.m */; };
+		F999A87B19D5B0A300F91926 /* icon-error.png in Resources */ = {isa = PBXBuildFile; fileRef = F999A86619D5B0A300F91926 /* icon-error.png */; };
+		F999A87C19D5B0A300F91926 /* icon-error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F999A86719D5B0A300F91926 /* icon-error@2x.png */; };
+		F999A87D19D5B0A300F91926 /* icon-info.png in Resources */ = {isa = PBXBuildFile; fileRef = F999A86819D5B0A300F91926 /* icon-info.png */; };
+		F999A87E19D5B0A300F91926 /* icon-info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F999A86919D5B0A300F91926 /* icon-info@2x.png */; };
+		F999A87F19D5B0A300F91926 /* icon-success.png in Resources */ = {isa = PBXBuildFile; fileRef = F999A86A19D5B0A300F91926 /* icon-success.png */; };
+		F999A88019D5B0A300F91926 /* icon-success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F999A86B19D5B0A300F91926 /* icon-success@2x.png */; };
+		F999A88119D5B0A300F91926 /* TWMessageBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F999A86D19D5B0A300F91926 /* TWMessageBarManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F999A80E19D5AF0500F91926 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F999A7EC19D5AF0300F91926 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F999A7F319D5AF0300F91926;
+			remoteInfo = GrannyVision;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F999A82B19D5B00700F91926 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F999A82819D5B00700F91926 /* PubNub.framework in Embed Frameworks */,
+				F999A82A19D5B00700F91926 /* Relayr.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F974038D19D5B502002101F3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F974038E19D5B502002101F3 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		F999A7F419D5AF0400F91926 /* GrannyVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrannyVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F999A7F819D5AF0400F91926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F999A7F919D5AF0400F91926 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F999A7FE19D5AF0400F91926 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F999A7FF19D5AF0400F91926 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F999A80219D5AF0400F91926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F999A80419D5AF0400F91926 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F999A80719D5AF0400F91926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F999A80D19D5AF0500F91926 /* GrannyVisionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrannyVisionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F999A81219D5AF0500F91926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F999A81319D5AF0500F91926 /* GrannyVisionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrannyVisionTests.m; sourceTree = "<group>"; };
+		F999A82319D5AFF700F91926 /* PubNub.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PubNub.framework; sourceTree = "<group>"; };
+		F999A82419D5AFF700F91926 /* Relayr.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Relayr.framework; sourceTree = "<group>"; };
+		F999A82C19D5B07300F91926 /* MicrophoneObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MicrophoneObserver.h; sourceTree = "<group>"; };
+		F999A82D19D5B07300F91926 /* MicrophoneObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MicrophoneObserver.m; sourceTree = "<group>"; };
+		F999A82E19D5B07300F91926 /* P_MircoPhoneObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P_MircoPhoneObserver.h; sourceTree = "<group>"; };
+		F999A82F19D5B07300F91926 /* P_WunderbarConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P_WunderbarConfig.h; sourceTree = "<group>"; };
+		F999A83019D5B07300F91926 /* P_WunderBarService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P_WunderBarService.h; sourceTree = "<group>"; };
+		F999A83119D5B07300F91926 /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		F999A83219D5B07300F91926 /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
+		F999A83319D5B07300F91926 /* WunderbarConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WunderbarConfig.h; sourceTree = "<group>"; };
+		F999A83419D5B07300F91926 /* WunderbarConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WunderbarConfig.m; sourceTree = "<group>"; };
+		F999A83519D5B07300F91926 /* WunderBarService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WunderBarService.h; sourceTree = "<group>"; };
+		F999A83619D5B07300F91926 /* WunderBarService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WunderBarService.m; sourceTree = "<group>"; };
+		F999A83719D5B07300F91926 /* WunderbarServiceStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WunderbarServiceStub.h; sourceTree = "<group>"; };
+		F999A83819D5B07300F91926 /* WunderbarServiceStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WunderbarServiceStub.m; sourceTree = "<group>"; };
+		F999A83E19D5B08100F91926 /* AppModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppModule.h; sourceTree = "<group>"; };
+		F999A83F19D5B08100F91926 /* AppModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppModule.m; sourceTree = "<group>"; };
+		F999A84119D5B09600F91926 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F999A84219D5B09600F91926 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F999A84619D5B0A300F91926 /* ARAudioRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARAudioRecognizer.h; sourceTree = "<group>"; };
+		F999A84719D5B0A300F91926 /* ARAudioRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARAudioRecognizer.m; sourceTree = "<group>"; };
+		F999A84819D5B0A300F91926 /* ARAudioRecognizerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARAudioRecognizerDelegate.h; sourceTree = "<group>"; };
+		F999A84A19D5B0A300F91926 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		F999A84B19D5B0A300F91926 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		F999A84D19D5B0A300F91926 /* JSObjectFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSObjectFactory.h; sourceTree = "<group>"; };
+		F999A84E19D5B0A300F91926 /* JSObjectFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSObjectFactory.m; sourceTree = "<group>"; };
+		F999A84F19D5B0A300F91926 /* JSObjection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSObjection.h; sourceTree = "<group>"; };
+		F999A85019D5B0A300F91926 /* JSObjection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSObjection.m; sourceTree = "<group>"; };
+		F999A85119D5B0A300F91926 /* JSObjectionBindingEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSObjectionBindingEntry.h; sourceTree = "<group>"; };
+		F999A85219D5B0A300F91926 /* JSObjectionBindingEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSObjectionBindingEntry.m; sourceTree = "<group>"; };
+		F999A85319D5B0A300F91926 /* JSObjectionEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSObjectionEntry.h; sourceTree = "<group>"; };
+		F999A85419D5B0A300F91926 /* JSObjectionEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSObjectionEntry.m; sourceTree = "<group>"; };
+		F999A85519D5B0A300F91926 /* JSObjectionInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSObjectionInjector.h; sourceTree = "<group>"; };
+		F999A85619D5B0A300F91926 /* JSObjectionInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSObjectionInjector.m; sourceTree = "<group>"; };
+		F999A85719D5B0A300F91926 /* JSObjectionInjectorEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSObjectionInjectorEntry.h; sourceTree = "<group>"; };
+		F999A85819D5B0A300F91926 /* JSObjectionInjectorEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSObjectionInjectorEntry.m; sourceTree = "<group>"; };
+		F999A85919D5B0A300F91926 /* JSObjectionModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSObjectionModule.h; sourceTree = "<group>"; };
+		F999A85A19D5B0A300F91926 /* JSObjectionModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSObjectionModule.m; sourceTree = "<group>"; };
+		F999A85B19D5B0A300F91926 /* JSObjectionProviderEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSObjectionProviderEntry.h; sourceTree = "<group>"; };
+		F999A85C19D5B0A300F91926 /* JSObjectionProviderEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSObjectionProviderEntry.m; sourceTree = "<group>"; };
+		F999A85D19D5B0A300F91926 /* JSObjectionRuntimePropertyReflector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSObjectionRuntimePropertyReflector.h; sourceTree = "<group>"; };
+		F999A85E19D5B0A300F91926 /* JSObjectionRuntimePropertyReflector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSObjectionRuntimePropertyReflector.m; sourceTree = "<group>"; };
+		F999A85F19D5B0A300F91926 /* JSObjectionUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSObjectionUtils.h; sourceTree = "<group>"; };
+		F999A86019D5B0A300F91926 /* JSObjectionUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSObjectionUtils.m; sourceTree = "<group>"; };
+		F999A86119D5B0A300F91926 /* NSObject+Objection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Objection.h"; sourceTree = "<group>"; };
+		F999A86219D5B0A300F91926 /* NSObject+Objection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Objection.m"; sourceTree = "<group>"; };
+		F999A86319D5B0A300F91926 /* Objection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Objection.h; sourceTree = "<group>"; };
+		F999A86619D5B0A300F91926 /* icon-error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-error.png"; sourceTree = "<group>"; };
+		F999A86719D5B0A300F91926 /* icon-error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-error@2x.png"; sourceTree = "<group>"; };
+		F999A86819D5B0A300F91926 /* icon-info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-info.png"; sourceTree = "<group>"; };
+		F999A86919D5B0A300F91926 /* icon-info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-info@2x.png"; sourceTree = "<group>"; };
+		F999A86A19D5B0A300F91926 /* icon-success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-success.png"; sourceTree = "<group>"; };
+		F999A86B19D5B0A300F91926 /* icon-success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-success@2x.png"; sourceTree = "<group>"; };
+		F999A86C19D5B0A300F91926 /* TWMessageBarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWMessageBarManager.h; sourceTree = "<group>"; };
+		F999A86D19D5B0A300F91926 /* TWMessageBarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWMessageBarManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F999A7F119D5AF0300F91926 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F974038F19D5B502002101F3 /* AVFoundation.framework in Frameworks */,
+				F974039019D5B502002101F3 /* CoreAudio.framework in Frameworks */,
+				F999A82719D5B00700F91926 /* PubNub.framework in Frameworks */,
+				F999A82919D5B00700F91926 /* Relayr.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F999A80A19D5AF0500F91926 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F999A7EB19D5AF0300F91926 = {
+			isa = PBXGroup;
+			children = (
+				F974038D19D5B502002101F3 /* AVFoundation.framework */,
+				F974038E19D5B502002101F3 /* CoreAudio.framework */,
+				F999A7F619D5AF0400F91926 /* GrannyVision */,
+				F999A81019D5AF0500F91926 /* GrannyVisionTests */,
+				F999A7F519D5AF0400F91926 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F999A7F519D5AF0400F91926 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F999A7F419D5AF0400F91926 /* GrannyVision.app */,
+				F999A80D19D5AF0500F91926 /* GrannyVisionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F999A7F619D5AF0400F91926 /* GrannyVision */ = {
+			isa = PBXGroup;
+			children = (
+				F999A82C19D5B07300F91926 /* MicrophoneObserver.h */,
+				F999A82D19D5B07300F91926 /* MicrophoneObserver.m */,
+				F999A82E19D5B07300F91926 /* P_MircoPhoneObserver.h */,
+				F999A82F19D5B07300F91926 /* P_WunderbarConfig.h */,
+				F999A83019D5B07300F91926 /* P_WunderBarService.h */,
+				F999A83119D5B07300F91926 /* StartViewController.h */,
+				F999A83219D5B07300F91926 /* StartViewController.m */,
+				F999A83E19D5B08100F91926 /* AppModule.h */,
+				F999A83F19D5B08100F91926 /* AppModule.m */,
+				F999A84119D5B09600F91926 /* AppDelegate.h */,
+				F999A84219D5B09600F91926 /* AppDelegate.m */,
+				F999A83319D5B07300F91926 /* WunderbarConfig.h */,
+				F999A83419D5B07300F91926 /* WunderbarConfig.m */,
+				F999A83519D5B07300F91926 /* WunderBarService.h */,
+				F999A83619D5B07300F91926 /* WunderBarService.m */,
+				F999A83719D5B07300F91926 /* WunderbarServiceStub.h */,
+				F999A83819D5B07300F91926 /* WunderbarServiceStub.m */,
+				F999A7FE19D5AF0400F91926 /* ViewController.h */,
+				F999A7FF19D5AF0400F91926 /* ViewController.m */,
+				F999A80119D5AF0400F91926 /* Main.storyboard */,
+				F999A80419D5AF0400F91926 /* Images.xcassets */,
+				F999A80619D5AF0400F91926 /* LaunchScreen.xib */,
+				F999A84419D5B0A300F91926 /* lib */,
+				F999A82219D5AFF700F91926 /* Frameworks */,
+				F999A7F719D5AF0400F91926 /* Supporting Files */,
+			);
+			path = GrannyVision;
+			sourceTree = "<group>";
+		};
+		F999A7F719D5AF0400F91926 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F999A7F819D5AF0400F91926 /* Info.plist */,
+				F999A7F919D5AF0400F91926 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F999A81019D5AF0500F91926 /* GrannyVisionTests */ = {
+			isa = PBXGroup;
+			children = (
+				F999A81319D5AF0500F91926 /* GrannyVisionTests.m */,
+				F999A81119D5AF0500F91926 /* Supporting Files */,
+			);
+			path = GrannyVisionTests;
+			sourceTree = "<group>";
+		};
+		F999A81119D5AF0500F91926 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F999A81219D5AF0500F91926 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F999A82219D5AFF700F91926 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F999A82319D5AFF700F91926 /* PubNub.framework */,
+				F999A82419D5AFF700F91926 /* Relayr.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		F999A84419D5B0A300F91926 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				F999A84519D5B0A300F91926 /* audiorecognizer */,
+				F999A84919D5B0A300F91926 /* mbprogresshud */,
+				F999A84C19D5B0A300F91926 /* objection */,
+				F999A86419D5B0A300F91926 /* twmessagebar */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		F999A84519D5B0A300F91926 /* audiorecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				F999A84619D5B0A300F91926 /* ARAudioRecognizer.h */,
+				F999A84719D5B0A300F91926 /* ARAudioRecognizer.m */,
+				F999A84819D5B0A300F91926 /* ARAudioRecognizerDelegate.h */,
+			);
+			path = audiorecognizer;
+			sourceTree = "<group>";
+		};
+		F999A84919D5B0A300F91926 /* mbprogresshud */ = {
+			isa = PBXGroup;
+			children = (
+				F999A84A19D5B0A300F91926 /* MBProgressHUD.h */,
+				F999A84B19D5B0A300F91926 /* MBProgressHUD.m */,
+			);
+			path = mbprogresshud;
+			sourceTree = "<group>";
+		};
+		F999A84C19D5B0A300F91926 /* objection */ = {
+			isa = PBXGroup;
+			children = (
+				F999A84D19D5B0A300F91926 /* JSObjectFactory.h */,
+				F999A84E19D5B0A300F91926 /* JSObjectFactory.m */,
+				F999A84F19D5B0A300F91926 /* JSObjection.h */,
+				F999A85019D5B0A300F91926 /* JSObjection.m */,
+				F999A85119D5B0A300F91926 /* JSObjectionBindingEntry.h */,
+				F999A85219D5B0A300F91926 /* JSObjectionBindingEntry.m */,
+				F999A85319D5B0A300F91926 /* JSObjectionEntry.h */,
+				F999A85419D5B0A300F91926 /* JSObjectionEntry.m */,
+				F999A85519D5B0A300F91926 /* JSObjectionInjector.h */,
+				F999A85619D5B0A300F91926 /* JSObjectionInjector.m */,
+				F999A85719D5B0A300F91926 /* JSObjectionInjectorEntry.h */,
+				F999A85819D5B0A300F91926 /* JSObjectionInjectorEntry.m */,
+				F999A85919D5B0A300F91926 /* JSObjectionModule.h */,
+				F999A85A19D5B0A300F91926 /* JSObjectionModule.m */,
+				F999A85B19D5B0A300F91926 /* JSObjectionProviderEntry.h */,
+				F999A85C19D5B0A300F91926 /* JSObjectionProviderEntry.m */,
+				F999A85D19D5B0A300F91926 /* JSObjectionRuntimePropertyReflector.h */,
+				F999A85E19D5B0A300F91926 /* JSObjectionRuntimePropertyReflector.m */,
+				F999A85F19D5B0A300F91926 /* JSObjectionUtils.h */,
+				F999A86019D5B0A300F91926 /* JSObjectionUtils.m */,
+				F999A86119D5B0A300F91926 /* NSObject+Objection.h */,
+				F999A86219D5B0A300F91926 /* NSObject+Objection.m */,
+				F999A86319D5B0A300F91926 /* Objection.h */,
+			);
+			path = objection;
+			sourceTree = "<group>";
+		};
+		F999A86419D5B0A300F91926 /* twmessagebar */ = {
+			isa = PBXGroup;
+			children = (
+				F999A86519D5B0A300F91926 /* Icons */,
+				F999A86C19D5B0A300F91926 /* TWMessageBarManager.h */,
+				F999A86D19D5B0A300F91926 /* TWMessageBarManager.m */,
+			);
+			path = twmessagebar;
+			sourceTree = "<group>";
+		};
+		F999A86519D5B0A300F91926 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				F999A86619D5B0A300F91926 /* icon-error.png */,
+				F999A86719D5B0A300F91926 /* icon-error@2x.png */,
+				F999A86819D5B0A300F91926 /* icon-info.png */,
+				F999A86919D5B0A300F91926 /* icon-info@2x.png */,
+				F999A86A19D5B0A300F91926 /* icon-success.png */,
+				F999A86B19D5B0A300F91926 /* icon-success@2x.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F999A7F319D5AF0300F91926 /* GrannyVision */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F999A81719D5AF0500F91926 /* Build configuration list for PBXNativeTarget "GrannyVision" */;
+			buildPhases = (
+				F999A7F019D5AF0300F91926 /* Sources */,
+				F999A7F119D5AF0300F91926 /* Frameworks */,
+				F999A7F219D5AF0300F91926 /* Resources */,
+				F999A82B19D5B00700F91926 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrannyVision;
+			productName = GrannyVision;
+			productReference = F999A7F419D5AF0400F91926 /* GrannyVision.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F999A80C19D5AF0500F91926 /* GrannyVisionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F999A81A19D5AF0500F91926 /* Build configuration list for PBXNativeTarget "GrannyVisionTests" */;
+			buildPhases = (
+				F999A80919D5AF0500F91926 /* Sources */,
+				F999A80A19D5AF0500F91926 /* Frameworks */,
+				F999A80B19D5AF0500F91926 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F999A80F19D5AF0500F91926 /* PBXTargetDependency */,
+			);
+			name = GrannyVisionTests;
+			productName = GrannyVisionTests;
+			productReference = F999A80D19D5AF0500F91926 /* GrannyVisionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F999A7EC19D5AF0300F91926 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "hedonistic enthusiasts";
+				TargetAttributes = {
+					F999A7F319D5AF0300F91926 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					F999A80C19D5AF0500F91926 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = F999A7F319D5AF0300F91926;
+					};
+				};
+			};
+			buildConfigurationList = F999A7EF19D5AF0300F91926 /* Build configuration list for PBXProject "GrannyVision" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F999A7EB19D5AF0300F91926;
+			productRefGroup = F999A7F519D5AF0400F91926 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F999A7F319D5AF0300F91926 /* GrannyVision */,
+				F999A80C19D5AF0500F91926 /* GrannyVisionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F999A7F219D5AF0300F91926 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F999A80319D5AF0400F91926 /* Main.storyboard in Resources */,
+				F999A87B19D5B0A300F91926 /* icon-error.png in Resources */,
+				F999A87F19D5B0A300F91926 /* icon-success.png in Resources */,
+				F999A87D19D5B0A300F91926 /* icon-info.png in Resources */,
+				F999A87E19D5B0A300F91926 /* icon-info@2x.png in Resources */,
+				F999A88019D5B0A300F91926 /* icon-success@2x.png in Resources */,
+				F999A80819D5AF0400F91926 /* LaunchScreen.xib in Resources */,
+				F999A80519D5AF0400F91926 /* Images.xcassets in Resources */,
+				F999A87C19D5B0A300F91926 /* icon-error@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F999A80B19D5AF0500F91926 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F999A7F019D5AF0300F91926 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F999A87619D5B0A300F91926 /* JSObjectionModule.m in Sources */,
+				F999A87019D5B0A300F91926 /* JSObjectFactory.m in Sources */,
+				F999A87119D5B0A300F91926 /* JSObjection.m in Sources */,
+				F999A87319D5B0A300F91926 /* JSObjectionEntry.m in Sources */,
+				F999A88119D5B0A300F91926 /* TWMessageBarManager.m in Sources */,
+				F999A83C19D5B07300F91926 /* WunderBarService.m in Sources */,
+				F999A87719D5B0A300F91926 /* JSObjectionProviderEntry.m in Sources */,
+				F999A87919D5B0A300F91926 /* JSObjectionUtils.m in Sources */,
+				F999A87219D5B0A300F91926 /* JSObjectionBindingEntry.m in Sources */,
+				F999A80019D5AF0400F91926 /* ViewController.m in Sources */,
+				F999A84319D5B09600F91926 /* AppDelegate.m in Sources */,
+				F999A86E19D5B0A300F91926 /* ARAudioRecognizer.m in Sources */,
+				F999A87419D5B0A300F91926 /* JSObjectionInjector.m in Sources */,
+				F999A86F19D5B0A300F91926 /* MBProgressHUD.m in Sources */,
+				F999A83D19D5B07300F91926 /* WunderbarServiceStub.m in Sources */,
+				F999A87819D5B0A300F91926 /* JSObjectionRuntimePropertyReflector.m in Sources */,
+				F999A84019D5B08100F91926 /* AppModule.m in Sources */,
+				F999A83A19D5B07300F91926 /* StartViewController.m in Sources */,
+				F999A87A19D5B0A300F91926 /* NSObject+Objection.m in Sources */,
+				F999A7FA19D5AF0400F91926 /* main.m in Sources */,
+				F999A83B19D5B07300F91926 /* WunderbarConfig.m in Sources */,
+				F999A87519D5B0A300F91926 /* JSObjectionInjectorEntry.m in Sources */,
+				F999A83919D5B07300F91926 /* MicrophoneObserver.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F999A80919D5AF0500F91926 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F999A81419D5AF0500F91926 /* GrannyVisionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F999A80F19D5AF0500F91926 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F999A7F319D5AF0300F91926 /* GrannyVision */;
+			targetProxy = F999A80E19D5AF0500F91926 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F999A80119D5AF0400F91926 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F999A80219D5AF0400F91926 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F999A80619D5AF0400F91926 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F999A80719D5AF0400F91926 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F999A81519D5AF0500F91926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F999A81619D5AF0500F91926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F999A81819D5AF0500F91926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GrannyVision/Frameworks",
+				);
+				INFOPLIST_FILE = GrannyVision/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F999A81919D5AF0500F91926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GrannyVision/Frameworks",
+				);
+				INFOPLIST_FILE = GrannyVision/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F999A81B19D5AF0500F91926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GrannyVisionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrannyVision.app/GrannyVision";
+			};
+			name = Debug;
+		};
+		F999A81C19D5AF0500F91926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GrannyVisionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrannyVision.app/GrannyVision";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F999A7EF19D5AF0300F91926 /* Build configuration list for PBXProject "GrannyVision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F999A81519D5AF0500F91926 /* Debug */,
+				F999A81619D5AF0500F91926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F999A81719D5AF0500F91926 /* Build configuration list for PBXNativeTarget "GrannyVision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F999A81819D5AF0500F91926 /* Debug */,
+				F999A81919D5AF0500F91926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F999A81A19D5AF0500F91926 /* Build configuration list for PBXNativeTarget "GrannyVisionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F999A81B19D5AF0500F91926 /* Debug */,
+				F999A81C19D5AF0500F91926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F999A7EC19D5AF0300F91926 /* Project object */;
+}
