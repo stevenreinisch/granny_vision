@@ -73,20 +73,35 @@ objection_requires(@"config")
     }];
 }
 
-//                                      if (!error) {
-//                                          [user queryCloudForIoTs:^(NSError* error){
-//                                              if (error) { return NSLog(@"%@", error.localizedDescription); }
-//
-//                                              for (RelayrTransmitter* transmitter in user.transmitters)
-//                                              {
-//                                                  NSLog(@"Transmitter's name: %@", transmitter.name);
-//                                              }
-//
-//                                              for (RelayrDevice* devices in user.devices)
-//                                              {
-//                                                  NSLog(@"Device's name: %@", devices.name);
-//                                              }
-//                                          }];
-//                                      }
+- (BOOL)isConnected {
+    return self.app != nil;
+}
+
+- (void)listDevices {
+    if ([self isConnected]) {
+        
+        RelayrUser *user = self.app.loggedUsers.lastObject;
+        
+        [user queryCloudForIoTs:^(NSError* error){
+            if (error) { return NSLog(@"%@", error.localizedDescription); }
+            
+            for (RelayrTransmitter* transmitter in user.transmitters)
+            {
+                NSLog(@"Transmitter's name: %@", transmitter.name);
+            }
+            
+            for (RelayrDevice* device in user.devices)
+            {
+                NSLog(@"Device's name: %@", device.name);
+                
+                for (RelayrInput* reading in device.inputs)
+                {
+                    NSLog(@"This device can measure %@ in %@ units", reading.meaning, reading.unit);
+                    NSLog(@"Last value obtained by this device for this specific reading is %@ at %@", reading.value, reading.date);
+                }
+            }
+        }];
+    }
+}
 
 @end

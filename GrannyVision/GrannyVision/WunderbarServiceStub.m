@@ -48,6 +48,14 @@
     });
 }
 
+- (BOOL)isConnected {
+    return YES;
+}
+
+- (void)listDevices {
+    
+}
+
 #pragma mark - private
 
 - (void)_generateEvent {

@@ -18,4 +18,8 @@ typedef enum {
 
 - (void)connect:(void (^)(NSError* error))completion;
 
+- (BOOL)isConnected;
+
+- (void)listDevices;
+
 @end

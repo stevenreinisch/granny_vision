@@ -46,6 +46,9 @@ objection_requires(@"wunderBarService")
                                                            description:nil
                                                                   type:TWMessageBarMessageTypeSuccess
                                                               duration:2.0];
+            
+            [self.wunderBarService listDevices];
+            
         } else {
             [[TWMessageBarManager sharedInstance] showMessageWithTitle:@"Not Connected"
                                                            description:nil
