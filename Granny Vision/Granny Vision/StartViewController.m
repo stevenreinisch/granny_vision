@@ -30,6 +30,8 @@ objection_requires(@"wunderBarService")
     
     self.wunderBarService = [[JSObjection defaultInjector] getObject:@protocol(P_WunderBarService)];
     
+    [self _subscribeToNotifications];
+    
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     hud.mode = MBProgressHUDModeIndeterminate;
     hud.labelText = @"Connecting to WunderBar";
@@ -54,6 +56,36 @@ objection_requires(@"wunderBarService")
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark -
+
+- (void) _subscribeToNotifications {
+    
+    [[NSNotificationCenter defaultCenter]
+     addObserverForName:kDoorBellIsRinning
+     object:nil
+     queue:[NSOperationQueue mainQueue]
+     usingBlock:^(NSNotification *note) {
+         
+         [[TWMessageBarManager sharedInstance] showMessageWithTitle:@"Door bell is ringing"
+                                                        description:nil
+                                                               type:TWMessageBarMessageTypeInfo
+                                                           duration:2.0];
+     }];
+    
+    
+    [[NSNotificationCenter defaultCenter]
+     addObserverForName:kSantaIsComing
+     object:nil
+     queue:[NSOperationQueue mainQueue]
+     usingBlock:^(NSNotification *note) {
+         
+         [[TWMessageBarManager sharedInstance] showMessageWithTitle:@"Santa is coming to town!"
+                                                        description:nil
+                                                               type:TWMessageBarMessageTypeInfo
+                                                           duration:2.0];
+     }];
 }
 
 @end

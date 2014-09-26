@@ -8,6 +8,8 @@
 
 extern NSString *const kDoorBellIsRinning;
 
+extern NSString *const kSantaIsComing;
+
 typedef enum {
     kCloudNotReachable
 } WunderBarError;

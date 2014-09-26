@@ -12,6 +12,7 @@
 @import Relayr;
 
 NSString *const kDoorBellIsRinning = @"kDoorBellIsRinning";
+NSString *const kSantaIsComing = @"kSantaIsComing";
 
 
 
